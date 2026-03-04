@@ -1,0 +1,159 @@
+/* ==================== MANAGE PEMINJAMAN ==================== */
+
+/* Background halaman manage */
+body.manage-peminjaman {
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    padding: 40px;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Tombol kembali pojok kanan */
+.top-bar {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+.btn-kembali {
+    text-decoration: none;
+    background: white;
+    color: #667eea;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.btn-kembali:hover {
+    background: #667eea;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Container manage */
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 30px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+
+/* Form manage */
+.manage-form,
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.manage-form select,
+.manage-form input,
+form select,
+form input {
+    flex: 1;
+    min-width: 160px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+.manage-form select:focus,
+.manage-form input:focus,
+form select:focus,
+form input:focus {
+    border-color: #667eea;
+    outline: none;
+    box-shadow: 0 0 5px rgba(102,126,234,0.4);
+}
+
+/* Tombol tambah */
+.manage-form button,
+form button {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.manage-form button:hover,
+form button:hover {
+    background: #5a67d8;
+    transform: translateY(-2px);
+}
+
+/* Table lebih modern */
+.manage-table,
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.manage-table th,
+table th {
+    background: #667eea;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+.manage-table td,
+table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+.manage-table tbody tr:hover,
+table tr:hover {
+    background: #f4f6ff;
+    transition: 0.2s;
+}
+
+/* Status Badge */
+.status-dipinjam {
+    background: #ff7675;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.status-kembali {
+    background: #00b894;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* Tombol Hapus */
+.btn-hapus,
+table a {
+    background: #ff4d4d;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-hapus:hover,
+table a:hover {
+    background: #e60000;
+    transform: scale(1.05);
+}
